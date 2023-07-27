@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>CONTACT US</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <style>
+            /* CSS styles for the wbsite */
+            body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20;
+    }
+    
+    header {
+      background-color: skyblue;
+      color: red;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: pink;
+      overflow: hidden;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: green;
+      text-decoration: line-through;
+    }
+    
+    #banner {
+      background-image: url('banner.jpg');
+      background-size: cover;
+      color: khaki;
+      text-align: center;
+      padding: 100px;
+    }
+    
+    #products {
+      text-align: center;
+    }
+    
+    .product-card {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+    }
+    #contact {
+      text-align: center;
+    }
+    
+    .contact-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-top: 50px;
+    }
+    .contact-info, .contact-form {
+      width: 45%;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    label {
+      margin-top: 10px;
+    }
+    input, textarea {
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 10px;
+    }
+    footer{
+        text-emphasis-color: white;
+        background-color: black;
+        color: white;
+        padding: 20 px;
+        text-align: center;
+    }
+        </style>
+        <a href="index.html">Back to HOME </a>
+        <h1>CONTACT US FOR MORE DETAILS</h1>
+        <p>To contact us, please visit our website or give us a call</p>
+        <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get in touch with us</h3>
+            <p>For any inquiries or to place an order, please contact us using the form below or reach out to us directly:</p>
+            <ul>
+              <li>Email: bankerkevin111@gmail.com</li>
+              <li>Phone: (951) 633-2107</li>
+            </ul>
+          </div>
+           <div class="contact-form">
+                      <h3>Contact Form</h3>
+                      <form action="contact.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Submit</button>
+                      </form>
+                    </div>
+      <footer>
+          <p>&copy; 2023 MINI COWS FOR SALE. All rights reserved.</p>
+      </footer>
+    </body>
+    </html>
