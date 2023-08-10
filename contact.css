@@ -1,0 +1,89 @@
+header {
+  background-color: skyblue;
+  color: red;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  overflow: hidden;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: green;
+  text-decoration: line-through;
+}
+
+#banner {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  color: khaki;
+  text-align: center;
+  padding: 100px;
+}
+
+#products {
+  text-align: center;
+}
+
+.product-card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+}
+#contact {
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+  padding: 40px 40px 80px;
+}
+.contact-info,
+.contact-form {
+  width: 45%;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  margin-top: 10px;
+}
+input,
+textarea {
+  margin-top: 5px;
+}
+button {
+  margin-top: 10px;
+}
+footer {
+  text-emphasis-color: white;
+  background-color: black;
+  color: white;
+  padding: 20 px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
